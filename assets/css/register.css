@@ -1,0 +1,135 @@
+.register-section {
+    background: #f6f7fb;
+    padding: 70px 20px;
+}
+
+.register-container {
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.register-container h2 {
+    text-align: center;
+    color: #5a0c5f;
+}
+
+.info-text {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* Progress Bar */
+.progress-bar {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.progress-bar li {
+    flex: 1;
+    text-align: center;
+    font-size: 13px;
+    color: #999;
+}
+
+.progress-bar li::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    display: block;
+    margin: auto;
+    background: #ddd;
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+
+.progress-bar li.active {
+    color: #5a0c5f;
+    font-weight: 600;
+}
+
+.progress-bar li.active::before {
+    background: #5a0c5f;
+}
+
+/* Form Steps */
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+}
+
+.form-step h3 {
+    color: #5a0c5f;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+.form-step input,
+.form-step select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 24px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn.next,
+.btn.primary {
+    background: #5a0c5f;
+    color: #fff;
+}
+
+.btn.prev {
+    background: #ddd;
+    margin-right: 10px;
+}
+
+/* Payment */
+.payment-box {
+    border: 1px dashed #5a0c5f;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .register-container {
+        padding: 25px;
+    }
+
+    /* Show only active step */
+    .progress-bar li {
+        display: none;
+    }
+
+    .progress-bar li.active {
+        display: block;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

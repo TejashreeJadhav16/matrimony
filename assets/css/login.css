@@ -1,0 +1,118 @@
+/* =====================
+   LOGIN PAGE
+===================== */
+.login-section {
+    background: #f6f7fb;
+    padding: 80px 20px;
+}
+
+.login-container {
+    max-width: 420px;
+    margin: auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #5a0c5f;
+    margin-bottom: 8px;
+}
+
+.info-text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* =====================
+   FORM
+===================== */
+.form-group {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.form-group input:focus {
+    border-color: #5a0c5f;
+    outline: none;
+}
+
+/* =====================
+   ACTIONS
+===================== */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.forgot-link {
+    color: #5a0c5f;
+    font-weight: 500;
+}
+
+/* =====================
+   BUTTON
+===================== */
+.btn.primary {
+    width: 100%;
+    padding: 12px;
+    border-radius: 30px;
+    border: none;
+    background: #5a0c5f;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn.primary:hover {
+    background: #4a0a50;
+}
+
+/* =====================
+   LINKS & NOTE
+===================== */
+.register-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #5a0c5f;
+    font-weight: 600;
+}
+
+.note {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #777;
+}
