@@ -1,0 +1,1 @@
+[![Architecture diagram of tejashreejadhav16/matrimony](https://gitdiagram.com/tejashreejadhav16/matrimony/diagram.png)](https://gitdiagram.com/tejashreejadhav16/matrimony?utm_source=readme&utm_medium=picture)
