@@ -1,132 +1,194 @@
-
 # 💍 Matrimony Website
 
-A web-based matrimony platform designed to help visitors and registered members connect, discover compatible profiles, and express interest in potential life partners. The platform includes member authentication, profile management, document uploads, profile search, member communication, and administrative controls.
+A web-based matrimony platform that helps members discover compatible profiles, express interest, and communicate with potential life partners. It includes user authentication, profile management, document verification, profile search, member chat, and administrative controls.
 
-## 📌 Project Overview
-
-The Matrimony Website provides a centralized platform for managing member profiles and facilitating connections. It includes a public registration and login system, member features, and an administrator panel for platform management, document verification, safety monitoring, and communication controls.
-[![Architecture diagram of tejashreejadhav16/matrimony](https://gitdiagram.com/tejashreejadhav16/matrimony/diagram.png)](https://gitdiagram.com/tejashreejadhav16/matrimony?utm_source=readme&utm_medium=picture)
-## ✨ Key Features
+## ✨ Features
 
 ### 👤 Member Features
-- **User Registration:** Create a new account.
-- **Secure Login:** Authenticate users through the login system and OTP functionality.
-- **Member Profiles:** Access and maintain personal profile information.
-- **Document Upload:** Submit documents for verification.
-- **Profile Search:** Search and explore potential matches.
-- **Interest & Matching:** Express interest in other members.
-- **Member Chat:** Communicate with other members.
-- **Privacy & Account Management:** Manage account-related settings.
+- User registration and login with OTP functionality.
+- Member profile management.
+- Document uploads.
+- Profile search and matching.
+- Send interest to other members.
+- Member-to-member chat.
+- Privacy and account management.
 
-### 🛡️ Administrator Features
-- **Admin Dashboard & Navigation:** Access administrative operations.
-- **Profile Review:** Review member profiles.
-- **User Management:** Manage platform users.
-- **Document Verification:** Verify submitted documents.
-- **Safety & Reports:** Investigate reports and safety concerns.
-- **Communication Controls:** Moderate platform communications.
-- **Platform Management:** Manage overall platform operations.
-- **Platform Monitoring:** Monitor system activity.
-- **Payments & Donations:** Access payment and donation functionality.
+### 🛡️ Admin Features
+- Admin dashboard and navigation.
+- Profile review and user management.
+- Document verification.
+- Safety reports and investigation.
+- Communication moderation.
+- Platform management and monitoring.
+- Payments and donations management.
 
 ## 🏗️ Project Architecture
 
-The repository is organized into three main functional areas:
+The application is divided into three major areas:
 
-1. **Public & Identity:** Public entry point, registration, login, and OTP authentication.
-2. **Member Journey:** Member profiles, document uploads, profile search, matching, chat, and privacy settings.
-3. **Admin Operations:** Administrative navigation, profile review, user management, document verification, safety reports, communication moderation, platform management, and monitoring.
+- **Public & Identity:** Public entry, registration, login, and OTP authentication.
+- **Member Journey:** Profiles, document uploads, search, matching, chat, and privacy.
+- **Admin Operations:** User management, document verification, safety, reports, and platform administration.
 
-A shared runtime handles session and access management, while MySQL stores the application's data.
+The shared runtime manages sessions and access, while MySQL stores application data.
 
 ### 📊 Interactive Repository Diagram
 
-Explore the project's file organization and relationships using GitDiagram.
+Explore the project structure and file relationships through GitDiagram.
 
-**[View Interactive GitDiagram](https://gitdiagram.com/tejashreejadhav16/matrimony)**
-
+[![Architecture diagram of tejashreejadhav16/matrimony](https://gitdiagram.com/tejashreejadhav16/matrimony/diagram.png)](https://gitdiagram.com/tejashreejadhav16/matrimony?utm_source=readme&utm_medium=picture)
 ## 🛠️ Technology Stack
-
-Based on the repository diagram:
 
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** PHP
 - **Database:** MySQL
-- **Authentication & Sessions:** PHP sessions and login/OTP processing
-- **Development Environment:** Visual Studio Code, with a local PHP/MySQL environment such as XAMPP
+- **Local Environment:** XAMPP
+- **Code Editor:** Visual Studio Code
 
-*Note: Confirm these technologies against the actual source code before publishing this section.*
+*Verify the technologies against the actual source code before publishing.*
 
-## 📂 Main Modules
+## 📂 Main Files
 
-| Module | File / Component |
+| File | Purpose |
 |---|---|
-| Public Entry | `index.php` |
-| Registration | `register.php` |
-| Login & OTP | `login-process.php` |
-| Admin Navigation | `sidebar.php` |
-| Profile Search | `search.php` |
-| Member Chat | `chat.php` |
-| Interest & Matching | `send-interest.php` |
-| Session & Access | `session.php` |
-| Database Configuration | `config.php` |
+| `index.php` | Public entry page |
+| `register.php` | User registration |
+| `login-process.php` | Login and OTP processing |
+| `sidebar.php` | Navigation component |
+| `search.php` | Profile search |
+| `chat.php` | Member communication |
+| `send-interest.php` | Interest and matching |
+| `session.php` | Session and access management |
+| `config.php` | Database configuration |
 
-The diagram also shows document verification, profile management, safety and reports, privacy, and other administrative functions. Their exact filenames should be confirmed from the repository.
+*The filenames and descriptions above are based on the generated repository diagram. Confirm them against your actual repository.*
 
 ## ⚙️ Installation & Setup
 
 ### Prerequisites
-- PHP
-- MySQL
-- XAMPP or another compatible local development environment
+
+- Git
+- XAMPP with Apache, PHP, and MySQL
+- Visual Studio Code
 - A web browser
 
-### Steps
+### Step 1: Clone the Repository
 
-1. Clone or download this repository.
+Open the VS Code terminal and run:
 
-   ```bash
-   git clone YOUR_GITHUB_REPOSITORY_URL
-   ```
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
 
-2. Move the project folder into the `htdocs` directory of your XAMPP installation.
+Navigate into the project directory:
 
-3. Start Apache and MySQL from the XAMPP Control Panel.
+```bash
+cd matrimony
+```
 
-4. Open phpMyAdmin and create a MySQL database for the project.
+If you have already downloaded the repository, open its folder in VS Code instead.
 
-5. Import the project's SQL file if one is included in the repository.
+### Step 2: Set Up XAMPP
 
-6. Update the database connection settings in `config.php` with your local database credentials.
+Move or copy the project folder into:
 
-7. Open the application in your browser:
+```text
+C:\xampp\htdocs\matrimony
+```
 
-   ```text
-   http://localhost/matrimony/
-   ```
+Open the XAMPP Control Panel and start:
 
-*Setup instructions may need adjustment depending on the actual database file and configuration used by your project.*
+- Apache
+- MySQL
+
+### Step 3: Configure the Database
+
+1. Open [phpMyAdmin](http://localhost/phpmyadmin).
+2. Create a MySQL database for the application.
+3. Import the project's `.sql` database file, if available.
+4. Open `config.php` in VS Code.
+5. Configure the database host, database name, username, and password according to your local MySQL setup.
+
+**Important:** Do not commit real database passwords or other secrets to GitHub.
+
+### Step 4: Run the Application
+
+Open your browser and visit:
+
+```text
+http://localhost/matrimony/
+```
+
+The website should load if Apache is running, the project is in the correct directory, and the database configuration is valid.
+
+## ▶️ Useful Commands
+
+Run these commands in the VS Code terminal when needed.
+
+**Check Git installation:**
+
+```bash
+git --version
+```
+
+**Check PHP installation:**
+
+```bash
+php -v
+```
+
+**Open the project in VS Code:**
+
+```bash
+code .
+```
+
+**Clone the project:**
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
+
+**Navigate to the project folder:**
+
+```bash
+cd matrimony
+```
+
+**Optional: Start PHP's built-in development server**
+
+If PHP is installed and available in your system PATH, run this command from the project directory:
+
+```bash
+php -S localhost:8000
+```
+
+Then visit:
+
+```text
+http://localhost:8000
+```
+
+For the standard XAMPP setup, use `http://localhost/matrimony/` instead. Start MySQL separately when the application requires database access.
 
 ## 🔐 Security Considerations
 
-- Validate and sanitize user input.
-- Use secure password hashing.
-- Validate uploaded documents and restrict permitted file types.
-- Protect authenticated routes and administrative pages.
-- Use prepared statements for database queries.
-- Keep database credentials out of public repositories.
+- Hash passwords securely.
+- Validate user input and use prepared SQL statements.
+- Validate document uploads and restrict allowed file types.
+- Protect authenticated pages and administrator routes.
+- Keep database credentials and secrets out of public repositories.
 
 ## 🚀 Future Enhancements
 
-- Advanced profile recommendations and compatibility matching.
-- Email or SMS notifications.
+- Advanced compatibility matching.
+- Email and SMS notifications.
+- Enhanced profile filters.
 - Improved mobile responsiveness.
-- Enhanced privacy settings and reporting tools.
-- Additional profile filters and search options.
+- Additional privacy and reporting features.
 
 
 
 ---
 
-*This project is intended to simplify profile discovery and communication through a structured matrimony platform.*
+*Built to simplify profile discovery and communication through a structured matrimony platform.*
